@@ -37,11 +37,9 @@ object AppLifecycleDetector : ActivityLifecycleCallbacks {
 
     override fun onActivityStopped(activity: Activity) {
         isActivityChangingConfigurations = activity.isChangingConfigurations
-        if (!isAppActivitiesRunning) {
-            --startedActivitiesCount
-            if (startedActivitiesCount == 0 && !isActivityChangingConfigurations) {
-                _isAppForegroundFlow.value = false
-            }
+        --startedActivitiesCount
+        if (!isAppActivitiesRunning && startedActivitiesCount == 0 && !isActivityChangingConfigurations) {
+            _isAppForegroundFlow.value = false
         }
     }
 

@@ -76,7 +76,7 @@ class SettingsController(args: Bundle?) : BaseViewModelController<SettingsViewMo
             CommonTextItem(ItemChangePasscode, Res.str(R.string.change_passcode)),
         )
         if (SecurityUtils.isBiometricsAvailableOnDevice(Res.context)) {
-            items.add(CommonSwitchItem(ItemBiometricAuth, Res.str(R.string.biometric_auth), false))
+            items.add(CommonSwitchItem(ItemBiometricAuth, Res.str(R.string.biometric_auth), viewModel.isBiometricOnFlow.value))
         }
         items.add(CommonTextItem(ItemDeleteWallet, Res.str(R.string.delete_wallet), titleColor = Res.color(R.color.text_error)))
         adapter.setItems(items)
