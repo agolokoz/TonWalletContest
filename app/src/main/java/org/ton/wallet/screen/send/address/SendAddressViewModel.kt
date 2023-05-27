@@ -14,7 +14,10 @@ import org.ton.wallet.AppComponentsProvider
 import org.ton.wallet.R
 import org.ton.wallet.data.model.AddressType
 import org.ton.wallet.domain.UseCases
-import org.ton.wallet.lib.core.*
+import org.ton.wallet.lib.core.Formatter
+import org.ton.wallet.lib.core.KeyboardUtils
+import org.ton.wallet.lib.core.Res
+import org.ton.wallet.lib.core.ThreadUtils
 import org.ton.wallet.lib.navigator.Screen
 import org.ton.wallet.lib.navigator.ScreenParams
 import org.ton.wallet.lib.screen.changehandler.SlideChangeHandler

@@ -10,8 +10,6 @@ import androidx.fragment.app.FragmentActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import org.ton.lib.tonapi.TonAccountType
 import org.ton.wallet.R
@@ -34,7 +32,6 @@ import org.ton.wallet.util.FlowBus
 import org.ton.wallet.util.FlowBusEvent
 import org.ton.wallet.util.NotificationUtils
 import pub.devrel.easypermissions.EasyPermissions
-import pub.devrel.easypermissions.PermissionRequest
 import java.lang.ref.WeakReference
 import java.util.concurrent.ConcurrentHashMap
 

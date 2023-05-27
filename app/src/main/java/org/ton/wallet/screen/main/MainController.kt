@@ -28,7 +28,6 @@ import org.ton.wallet.screen.main.adapter.MainHeaderAdapter
 import org.ton.wallet.screen.main.adapter.MainTransactionsAdapter
 import org.ton.wallet.screen.main.delegate.MainControllerBinding
 import org.ton.wallet.screen.main.delegate.MainStartAnimationDelegate
-import org.ton.wallet.screen.settings.SettingsViewModel
 import org.ton.wallet.util.NotificationUtils
 import pub.devrel.easypermissions.EasyPermissions
 import kotlin.math.max

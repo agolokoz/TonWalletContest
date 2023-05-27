@@ -3,7 +3,6 @@ package org.ton.wallet
 import android.os.Bundle
 import org.ton.wallet.data.model.AddressType
 import org.ton.wallet.domain.GetAddressTypeUseCase
-import org.ton.wallet.domain.UseCases
 import org.ton.wallet.lib.core.Res
 import org.ton.wallet.lib.navigator.Navigator
 import org.ton.wallet.lib.navigator.Screen

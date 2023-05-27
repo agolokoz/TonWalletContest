@@ -29,6 +29,7 @@ object Deps {
     const val contraintLayout = "androidx.constraintlayout:constraintlayout:2.1.4"
     const val core = "androidx.core:core-ktx:1.10.0"
     const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
+    const val desugaring = "com.android.tools:desugar_jdk_libs:1.2.2"
     const val easyPermissions = "pub.devrel:easypermissions:3.0.0"
     const val kotlinJson = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0"
     const val okHttpBom = "com.squareup.okhttp3:okhttp-bom:4.11.0"

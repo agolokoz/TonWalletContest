@@ -6,8 +6,6 @@ import android.os.Bundle
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import org.ton.wallet.lib.core.BrowserUtils
-import org.ton.wallet.util.FlowBus
-import org.ton.wallet.util.FlowBusEvent
 
 object AppLifecycleDetector : ActivityLifecycleCallbacks {
 

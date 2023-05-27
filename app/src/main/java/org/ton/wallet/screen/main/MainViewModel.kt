@@ -3,7 +3,6 @@ package org.ton.wallet.screen.main
 import android.os.Bundle
 import android.text.Spannable
 import android.text.style.ForegroundColorSpan
-import androidx.core.os.bundleOf
 import com.bluelinelabs.conductor.ControllerChangeType
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -14,7 +13,6 @@ import org.ton.lib.tonapi.TonCoin
 import org.ton.wallet.AppComponentsProvider
 import org.ton.wallet.R
 import org.ton.wallet.data.db.transaction.TransactionDto
-import org.ton.wallet.data.model.TonConnectEvent
 import org.ton.wallet.domain.UseCases
 import org.ton.wallet.lib.core.Formatter
 import org.ton.wallet.lib.core.L
@@ -26,7 +24,6 @@ import org.ton.wallet.lib.screen.changehandler.SlideChangeHandler
 import org.ton.wallet.lib.screen.viewmodel.BaseViewModel
 import org.ton.wallet.screen.main.adapter.MainTransactionsAdapter
 import org.ton.wallet.screen.scanqr.ScanQrController
-import org.ton.wallet.screen.send.connect.SendConnectConfirmController
 import org.ton.wallet.screen.transaction.TransactionDetailsController
 import org.ton.wallet.util.*
 import java.math.BigDecimal

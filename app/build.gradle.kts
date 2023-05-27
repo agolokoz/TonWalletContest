@@ -17,6 +17,12 @@ android {
         versionName = Config.versionName
     }
 
+    compileOptions {
+        isCoreLibraryDesugaringEnabled = true
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
     signingConfigs {
         getByName("debug") {
             storeFile = file("./config/debug.keystore")
@@ -50,6 +56,8 @@ android {
 }
 
 dependencies {
+    coreLibraryDesugaring(Deps.desugaring)
+
     implementation(Deps.activity)
     implementation(Deps.appCompat)
     implementation(Deps.biometric)
